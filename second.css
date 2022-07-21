@@ -6,7 +6,7 @@ body{
 
 }
 
-.secondPage{
+.container{
     position:relative;
     width:60%;
     top:30px;
@@ -18,7 +18,63 @@ body{
 
 .secondPage img {
     position: absolute;   
-    max-width:120px;
+    max-width:140px;
     top:40px;
     left:100px;
+}
+
+#question h1{
+    position:absolute;
+    width:70%;
+    margin:0 auto;
+    color:rgb(241, 235, 235);
+    top:150px;
+    left:200px;
+    font-size: 40px;
+    font-weight: 500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.answers{
+    position:absolute;
+    width:70%;
+    top:300px;
+    left:160px;
+}
+
+.answers button{
+    display:inline-block;
+    margin:0 auto;
+    padding:17px 100px;
+    background-color: none;
+    border: 2px solid;
+    border-radius:30px ;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.answerText{
+    display: inline-block;
+    background-color:transparent;
+    color:#fff;
+    font-size:14px;
+}
+
+.answerText:hover{
+    background-color:deeppink;
+    box-shadow:1px 1px 10px deeppink;
+}
+
+.numberQ {
+    position:absolute;
+    width:70%;
+    bottom:40px;
+    left:380px;
+    color:aliceblue;
+    font-size:15px;
+    font-family: sans-serif;
+}
+
+.numberQ strong{
+    color:deeppink;
 }
