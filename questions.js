@@ -103,7 +103,7 @@
             let questionNumber = [];
             let indexQuestuion= -1;
 
-            const questionText = function(){
+            const questionText = function(event){
                 let quest = document.querySelector("#question h1");
                 indexQuestuion++;
                  questionNumber = questions[indexQuestuion]
@@ -115,26 +115,34 @@
 
             let answerNode = []
            
-            const getAnswers = function(){
+            const getAnswers = function(event){
                 answerNode.push(questions[indexQuestuion].correct_answer)
                 answerNode.push(questions[indexQuestuion].incorrect_answers[0])
                 answerNode.push(questions[indexQuestuion].incorrect_answers[1])
                 answerNode.push(questions[indexQuestuion].incorrect_answers[2])
                 let ansBtn = document.querySelectorAll('.answers button')
-                for(let i=0;i<ansBtn.length;i++) {
+                for(let  i=0;i<ansBtn.length;i++) {
                     ansBtn[i].innerText = answerNode[i]
                 }
             }
             getAnswers() 
 
 
-            
-            const changeQuestion = function(event){
+            // let nextAnswer = document.getElementsByClassName('answerText')
+            //     nextAnswer.addEventListener  ('click', (changeQuestion) => {
+            //         ansBtn.innerText =changeQuestion(getAnswers)})
+            const changeQuestion = function(e){
                 let nextQuestion = questionText()
-               // let nextAnswers = getAnswers(answerNode[i])          
+                
+               
             }
 
-            changeQuestion (event)
+             changeQuestion (e)
+
+            // const changeAnswer = function(event){
+             
+
+            // }
 
  
 
