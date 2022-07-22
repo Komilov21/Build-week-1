@@ -1,0 +1,163 @@
+body{
+    margin:0;
+    background-color:black;
+    min-height:100%;
+    
+
+}
+
+.container{
+    position:relative;
+    width:60%;
+    top:30px;
+    margin:0 auto;
+    height: 580px;
+    background-size: cover;
+    background-image: url(bg.jpg);
+}
+
+.logo img{
+    position: absolute;   
+    max-width:150px;
+    top:40px;
+    left:90px;
+}
+
+.title{
+    position:absolute;
+    top:110px;
+    left:210px;
+    text-align: center;
+    color:aliceblue;
+    font-size:40px;
+    font-weight:bold;
+    font-family:sans-serif;
+
+
+}
+
+.paragraph{
+    position:absolute;
+    width:100%;
+    top:180px;
+    color:aliceblue;
+    font-size:20px;
+    text-align:center;
+    font-family:sans-serif;
+}
+
+.rating{
+    position:absolute;
+    top:48%;
+    left:50%;
+    transform:translate(-50%,-50%) rotateY(180deg);
+    display:flex;
+    
+}
+
+.rating input{
+    display:none;
+   
+
+}
+
+.rating label {
+    display: block;
+    width:55px;
+    cursor: pointer;
+    color:#101010;
+}
+
+.rating label:before{
+    content: '\f005';
+    font-family: FontAwesome;
+    position:absolute;
+    display:block;
+    font-size: 45px;
+    color:#07020f;
+   
+}
+
+.rating label:after{
+    content: '\f005';
+    font-family: FontAwesome;
+    position:absolute;
+    display:block;
+    font-size: 50px;
+    color:aqua;
+    top:0;
+    opacity: 0;
+    transition: 0.5s;
+    text-shadow: 0 2px 5px rgba(0,0,0,.5);
+
+}
+
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after 
+{
+    opacity: 1;
+}
+
+.comment h2{
+    position:absolute;
+    width:100%;
+    top:65%;
+    color:aliceblue;
+    font-size:18px;
+    text-align:center;
+    font-family:sans-serif;
+}
+
+.comment input{
+    position: absolute;
+    color:#fff;
+    width:60%;
+    top:75%;
+    left:20%;
+    border: none;
+    background-color:transparent;
+    resize: none;
+    outline: none;
+}
+hr{
+    position: absolute;
+    width:60%;
+    top:78%;
+    left:20%;
+    height: 2px;
+    border: none;
+    background-color: deeppink;
+    
+}
+
+.button{
+    position: absolute;
+    bottom:7%;
+    left:40%;
+}
+
+.button button{
+    padding:10px 50px;
+    font-size:20px;
+    font-weight:bold;
+    margin-top: 20px;
+    border:none;
+    outline:none;
+    background-color:aquamarine;
+}
+
+.button button:hover{
+    box-shadow:5px 2px 20px aquamarine;
+}
+
+#success{
+    position:absolute;
+    left:40%;
+    top:7%;
+    color:greenyellow;
+    font-size:60px;
+    font-weight:bold;
+    font-family: sans-serif;
+    display:none;
+}

@@ -101,17 +101,17 @@ p{
 #buttonText{
     padding:13px 40px;
     font-size:large;
-    font-weight: 700;
+    font-weight: 900;
     background-color:aquamarine;
     border:none;
-    box-shadow:1px 2px 35px aquamarine;
+    box-shadow: none;
     cursor: pointer;
 }
 
 #buttonText:hover{
-    background-color:rgb(150, 173, 18);
-    box-shadow:none;
-    color:white;
+    background-color:aquamarine;
+    box-shadow:1px 2px 35px aquamarine;
+    color:rgb(2, 2, 2);
    
 }
 

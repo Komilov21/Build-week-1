@@ -108,27 +108,35 @@
                 indexQuestuion++;
                  questionNumber = questions[indexQuestuion]
                 quest.innerText  =  questionNumber.question;
-                
             }
             questionText();
 
-            
+
+
             let answerNode = []
+           
             const getAnswers = function(){
-                let buttons = document.querySelector(".answers button")
-                let corrextA = answers.push(question.correct_answer)
-                let incorrectA = answers.push(question.incorrect_answers)
-                for (let i=0; i<buttons.length;i++){
-                    
-                }  
+                answerNode.push(questions[indexQuestuion].correct_answer)
+                answerNode.push(questions[indexQuestuion].incorrect_answers[0])
+                answerNode.push(questions[indexQuestuion].incorrect_answers[1])
+                answerNode.push(questions[indexQuestuion].incorrect_answers[2])
+                let ansBtn = document.querySelectorAll('.answers button')
+                for(let i=0;i<ansBtn.length;i++) {
+                    ansBtn[i].innerText = answerNode[i]
+                }
             }
-            getAnswers(answerNode) 
+            getAnswers() 
+
 
             
+            const changeQuestion = function(event){
+                let nextQuestion = questionText()
+               // let nextAnswers = getAnswers(answerNode[i])          
+            }
 
+            changeQuestion (event)
 
-
-
+ 
 
 
             

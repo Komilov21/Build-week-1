@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <link rel="StyleSheet" href="./feedback.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">  
+            <img src="./epicode_logo.png"/>
+        </div>
+        
+        <div>
+            <h1 class="title">Tell us how it's going</h1>
+            <p class="paragraph">From 0 to 10,how likely are you recommend EPICODE <br/>to a friend or a colleague?</p>
+        </div>
+
+        <div class="rating">
+            <input type="radio" name="star" id="star1 "><label for ="star1"> </label>
+            <input type="radio" name="star" id="star2 "><label for ="star2"> </label>
+            <input type="radio" name="star" id="star3 "><label for ="star3"> </label>
+            <input type="radio" name="star" id="star4 "><label for ="star4"> </label>
+            <input type="radio" name="star" id="star5 "><label for ="star5"> </label>
+            <input type="radio" name="star" id="star6 "><label for ="star6"> </label>
+            <input type="radio" name="star" id="star7 "><label for ="star7"> </label>
+            <input type="radio" name="star" id="star8 "><label for ="star8"> </label>
+            <input type="radio" name="star" id="star9 "><label for ="star9"> </label>
+            <input type="radio" name="star" id="star10 "><label for ="star10"> </label>
+        </div>
+
+        <div class="comment">
+            <h2>Leave us an open feedback about your experience so far</h2>
+
+            <input type="text" placeholder="write your comment here ">
+            <hr/>
+        </div>
+
+        <div class="button" onclick = "message(event)">
+            <button>SUBMIT</button>
+        </div>
+
+        <div  class="message">
+            <div id ="success">Thank You!</div>
+        </div>
+
+
+    </div>
+    <script src="feedback.js">
+    
+    </script>
+</body>
+</html>
